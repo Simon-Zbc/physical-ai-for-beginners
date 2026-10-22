@@ -221,3 +221,6 @@ __marimo__/
 
 # Generated camera images (ch06)
 chapters/ch06_mujoco_basics/*.png
+
+# Trained models (ch09)
+chapters/ch09_reinforcement_learning/models/
