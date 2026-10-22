@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Generated camera images (ch06)
+chapters/ch06_mujoco_basics/*.png

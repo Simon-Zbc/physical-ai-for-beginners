@@ -1,0 +1,12 @@
+[project]
+name = "physical-ai-for-beginners"
+version = "0.1.0"
+description = "フィジカルAI入門連載のサンプルコード集"
+requires-python = ">=3.10"
+dependencies = [
+    "mujoco>=3.0.0",
+    "numpy>=1.26",
+    "openai>=1.0",
+    "pillow>=10.0",
+    "python-dotenv>=1.0",
+]
