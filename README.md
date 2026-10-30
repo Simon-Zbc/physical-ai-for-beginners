@@ -60,7 +60,7 @@ physical-ai-for-beginners/
 | # | 記事 | 主なテーマ | 実践 | コード | 状態 |
 |---|---|---|---|---|---|
 | 09 | [強化学習（RL）](articles/09_強化学習.md) | MDP、PPO / SAC、報酬設計 | Reach タスクの学習 | [`ch09_reinforcement_learning/`](chapters/ch09_reinforcement_learning/) | ✅ |
-| 10 | 模倣学習（IL） | Behavior Cloning、ACT、Diffusion Policy | デモデータから方策を学習 | - | ⬜ |
+| 10 | [模倣学習（IL）](articles/10_模倣学習.md) | Behavior Cloning、ACT、Diffusion Policy | デモデータから方策を学習 | [`ch10_imitation_learning/`](chapters/ch10_imitation_learning/) | ✅ |
 | 11 | LeRobot 実践 | LeRobotDataset、学習・評価 | 自作データセットで方策を学習 | - | ⬜ |
 
 ### Part 5：基盤モデルの時代
@@ -108,7 +108,8 @@ physical-ai-for-beginners/
 | 第7章（Isaac Sim / Lab） | RT コアを持つ RTX GPU が必須。ローカルにない場合はクラウド GPU を使用 |
 | 第8章（Genesis） | Python 3.10〜3.13 の別環境と PyTorch が必要（CPU でも動作） |
 | 第9章（強化学習） | CPU のみで実行可能（PyTorch は CPU 版で可） |
-| 第10〜14章（学習） | NVIDIA GPU 推奨。Google Colab やクラウド GPU でも可 |
+| 第10章（模倣学習） | CPU のみで実行可能（PyTorch は CPU 版で可） |
+| 第11〜14章（学習） | NVIDIA GPU 推奨。Google Colab やクラウド GPU でも可 |
 | 第20章 | 実機（SO-101 など）。未所持の場合はシミュレーションで代替 |
 
 > **Note**：GTX 10xx（Pascal 世代）の GPU を使う場合、PyTorch は CUDA 12.6 ビルド（`cu126`）を選んでください。CUDA 12.8 以降のビルドは Pascal 世代に対応していません。
@@ -130,7 +131,7 @@ python -m venv .venv
 pip install mujoco numpy openai python-dotenv pillow
 ```
 
-各章の実行方法は、それぞれのディレクトリ内の README を参照してください（例：[`chapters/ch00_intro/README.md`](chapters/ch00_intro/README.md)）。LLM を使う章（第1・2章）は、各章の `.env.example` を `.env` にコピーして API キーを設定します。強化学習の章（第9章）は、追加の依存関係（Stable-Baselines3・Gymnasium・PyTorch）が必要です（`uv sync --extra rl`。pip の場合は [`chapters/ch09_reinforcement_learning/README.md`](chapters/ch09_reinforcement_learning/README.md) を参照）。
+各章の実行方法は、それぞれのディレクトリ内の README を参照してください（例：[`chapters/ch00_intro/README.md`](chapters/ch00_intro/README.md)）。LLM を使う章（第1・2章）は、各章の `.env.example` を `.env` にコピーして API キーを設定します。強化学習の章（第9章）は、追加の依存関係（Stable-Baselines3・Gymnasium・PyTorch）が必要です（`uv sync --extra rl`。pip の場合は [`chapters/ch09_reinforcement_learning/README.md`](chapters/ch09_reinforcement_learning/README.md) を参照）。模倣学習の章（第10章）は、追加の依存関係（PyTorch）が必要です（`uv sync --extra il`。pip の場合は [`chapters/ch10_imitation_learning/README.md`](chapters/ch10_imitation_learning/README.md) を参照）。
 
 ## 注意事項
 

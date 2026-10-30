@@ -21,6 +21,12 @@ rl = [
     "torch>=2.9",
 ]
 
+# 第10章（模倣学習）: uv sync --extra il
+# PyTorch は rl と同じく CPU 版（下の [tool.uv.sources]）。numpy・pillow は本体の依存関係に含まれる
+il = [
+    "torch>=2.9",
+]
+
 [[tool.uv.index]]
 name = "pytorch-cpu"
 url = "https://download.pytorch.org/whl/cpu"

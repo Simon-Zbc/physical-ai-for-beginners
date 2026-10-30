@@ -224,3 +224,8 @@ chapters/ch06_mujoco_basics/*.png
 
 # Trained models (ch09)
 chapters/ch09_reinforcement_learning/models/
+
+# Demos, trained models and plots (ch10)
+chapters/ch10_imitation_learning/data/
+chapters/ch10_imitation_learning/models/
+chapters/ch10_imitation_learning/plots/
